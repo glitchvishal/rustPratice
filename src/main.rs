@@ -17,6 +17,9 @@ fn main() {
     print!("{}", chart);
     tuple();
     array();
+    loop_fun();
+    while_loop_fn();
+    while_loop();
 }
 
 fn simple_function(){
@@ -45,7 +48,6 @@ fn tuple() {
 
     println!("{:?}", tup);  // Print the entire tuple
     println!("{}", tup.2);   // Access and print a specific element
-
     println!("{:?}", tup);  // Print the modified tuple
 }
 fn array(){
@@ -55,8 +57,50 @@ fn array(){
 }
 
 
+//loop function that
+
+fn loop_fun(){
+    let mut x = 0;
+    loop{
+        x += 1;
+        println!(" x = {}",x);
+
+        if x == 5{
+            println!("we get 5");
+            break;
+        }
+    }
+}
+
+//loop with while
+
+// fn while_loop_fn(){
+//     let  number =0;
+//     while number != 0 {
+//         println!("{}",number);
+//         number == 1;
+//     }
+//     println!("hey");
+// }
 
 
+fn while_loop_fn() {
+    let mut number = 0;
+    while number != 0 {
+        println!("{}", number);
+        number = 1; // Use the assignment operator to change the value
+    }
+    println!("hey");
+}
 
+fn while_loop(){
+    let a = [10,20,55,68,98,32,41,66,75,48];
+    let mut i = 0;
 
+    while i <= 5{
+        println!("This is the value of the index {:?} : {}",i ,a[i]);
 
+        i += 1;
+    }
+
+}
