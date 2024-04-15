@@ -99,7 +99,6 @@ fn while_loop(){
 
     while i <= 5{
         println!("This is the value of the index {:?} : {}",i ,a[i]);
-
         i += 1;
     }
 
