@@ -20,6 +20,7 @@ fn main() {
     loop_fun();
     while_loop_fn();
     while_loop();
+    fourth_for_loop()
 }
 
 fn simple_function(){
@@ -102,4 +103,14 @@ fn while_loop(){
         i += 1;
     }
 
+}
+//for loop
+
+fn fourth_for_loop(){
+    for x in 1..11{
+        if x==5{
+            continue;
+        }
+        println!("x is {}",x); 
+    }
 }
